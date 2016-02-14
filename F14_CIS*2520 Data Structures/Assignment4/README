@@ -1,0 +1,17 @@
+Course:     CIS*2520 F14
+Title:      Assignment 4
+Author:     Kyle Hersey
+Student #:  0851973
+Date:       November 20, 2014
+
+Instruction for running:
+open up a terminal
+navigate to the directory where you extracted the .tar.gz file
+into terminal type: 
+make
+to run type:
+./avltree
+
+Limitations:
+I code on a Mac and I ran into an issue while testing on Ubuntu 14.04 where 
+the menu will display twice, everytime after the first time.  

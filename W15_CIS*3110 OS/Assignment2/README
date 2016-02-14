@@ -1,0 +1,39 @@
+********************* README *********************
+author:     Kyle Hersey
+student#:   0851973
+course:     CIS*3110
+assignment: 2
+**************************************************
+
+
+Compile and Run:
+navigate to the directory where this was unpacked in a terminal and type:
+make
+this will compile it, now type ./runme < inputfile.txt to run
+or add flags
+-d for details
+-v for verbose
+-r ## for round robin, replace ## with your desired time quantum
+
+
+Submitted Files:
+priorityQueue.c & priorityQueue.h
+ - Everything necesary to implement a priority queue.
+   Worked Cited: rosettacode.org/wiki/Priority_queue
+fifoQueue.c & fifoQueue.h
+ - Everything necesary to implement a simple linked list based FIFO queue.
+main.c & cpu_sim.h
+ - Main and all the other functions, process, thread and burst types.  Everything that's not a queue.
+
+
+Report:
+In my simulation overhead is calculated whenever a process is moved from READY to RUNNING.  This includes if it is the first process, or if
+the CPU was previously idle.  Overhead is calculated in an if else-if statement: where if the Process ID of the new thread does not match 
+the Process ID of the previous thread then process switch overhead is added, else if the Process ID is the same but the Thread ID does not 
+match, then thread switch overhead is added instead.  If the same thread runs twice in a row for any reason, no overhead will be applied.  
+I guess the assumption I made here is that cleanup of data from the previous thread or process occurs when a new thread or process shows up, 
+rather than when the process is removed from the CPU.  In hindsight I see that there are probably better ways to implement overhead, but I 
+didn't fully understand this assignment until I was done.
+
+NOTE: wrote and tested on OS X 10.10
+

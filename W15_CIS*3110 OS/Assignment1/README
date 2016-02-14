@@ -1,0 +1,86 @@
+README
+
+student:    Kyle Hersey
+student#:   0851973
+course:     CIS*3110
+assignment: 1
+
+
+NOTES:
+Submission says we are required to include a report so mine is in this file.
+My shell can operate with multiple pipes.
+
+
+FILES:
+mshell.c - All the code for the project except for the parser.  
+		   All function comments are in here too.
+
+mshell.h - Function prototypes and #include statements
+
+lex.c    - Flex parser provided on the forum
+
+makefile - Nothing to say, its a makefile
+
+
+COMPILATION AND RUN:
+A simple make will compile everything.
+command:
+make
+
+The executable will be called msh.
+command:
+./msh
+
+
+ALGORITHM:
+
+get line from terminal
+if line is NULL:
+	repeat from top
+if line is "exit":
+	exit
+if line is "arg":
+	call arg()
+	repeat from top
+if line is "add":
+	call add()
+	repeat from top
+check for input redirection
+check for output redirection
+count pipes
+check for &
+run command:
+	if no pipes:
+		fork()
+		CHILD:
+			apply input and/or output redirection
+			execvp the command
+			exit
+		PARENT:
+			if & was not found:
+				wait for child
+	if pipes:
+		set up pipes
+		get next command
+		loop until out of commands:
+			fork()
+			CHILD:
+				apply input and/or output redirection
+				if not last command:
+					pipe output
+				if not first command:
+					pipe input
+				close pipes
+				execvp the command
+			PARENT:
+				close pipes
+				if & was not found:
+					wait for all children
+repeat from top
+
+
+WORK CITED:
+http://www.tldp.org/LDP/lpg/node11.html - Creating Pipes in C
+http://people.cs.pitt.edu/~khalifa/cs1550/sum06/Assignments/Assign1/assignment1.htm - Example from the forums
+
+

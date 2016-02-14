@@ -1,0 +1,83 @@
+Course:		CIS*2520 F14
+Title:		Assignment 2
+Author: 	Kyle Hersey
+Student #: 	0851973
+Date:		October 14, 2014
+
+Instruction for running:
+open up a terminal
+navigate to the directory where you extracted the .tar.gz file
+into terminal type: 
+make
+to run part 1 type:
+./bin1/runme
+to run part 2 type:
+./bin2/runme [postfix equation goes here]
+YOU MUST include a valid postfix equation as an argument from the terminal.  An expression is in postfix form if the operators appear after their operands, for example, “1 2+” means “1 + 2”, and “1 2 + 5 3− ∗” means “(1 + 2) ∗ (5−3)”.
+
+Sample output:
+Part 1:
+The-KyleBook-Air:Assignment2 kyle$ ./bin1/runme
+Lists Load Complete
+
+1. Add a new car to the available-for-rent list
+2. Add a returned car to the available-for-rent list
+3. Add a returned car to the repair list
+4. Transfer a car from the repair list to the available-for-rent list
+5. Rent the first available car
+6. Print all lists
+7. Quit
+>1
+Please Enter Car Plate Number
+>DINGUSCAR
+plate entered: DINGUSCAR
+Please Enter Car Mileage
+>54636
+
+New Car with plate: DINGUSCAR added to availableList
+
+1. Add a new car to the available-for-rent list
+2. Add a returned car to the available-for-rent list
+3. Add a returned car to the repair list
+4. Transfer a car from the repair list to the available-for-rent list
+5. Rent the first available car
+6. Print all lists
+7. Quit
+>6
+
+Available List:
+Plate: WACKY007
+Mileage: 7666
+Plate: DINGUSCAR
+Mileage: 54636
+Plate: potato69
+Mileage: 110100
+Plate: TORY647
+Mileage: 120001
+
+Rented List:
+Plate: 416FORD
+Mileage: 12000
+Expected Return Date: 14/11/23 (yy/mm/dd)
+
+Repair List:
+Plate: potato
+Mileage: 15432
+Plate: 4321BARF
+Mileage: 65121
+
+1. Add a new car to the available-for-rent list
+2. Add a returned car to the available-for-rent list
+3. Add a returned car to the repair list
+4. Transfer a car from the repair list to the available-for-rent list
+5. Rent the first available car
+6. Print all lists
+7. Quit
+>7
+Total Income: 0.00
+Lists Save Complete
+Exiting...
+
+part 2:
+The-KyleBook-Air:Assignment2 kyle$ ./bin2/runme 12+53-*
+result = 6

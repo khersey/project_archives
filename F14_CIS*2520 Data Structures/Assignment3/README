@@ -1,0 +1,207 @@
+Course:		CIS*2520 F14
+Title:		Assignment 3
+Author: 	Kyle Hersey
+Student #: 	0851973
+Date:		November 1st, 2014
+
+Instruction for running:
+open up a terminal
+navigate to the directory where you extracted the .tar.gz file
+into terminal type: 
+make
+to run part 1 type:
+./bin1/runme 'equation'
+where equation is a valid mathematical equation containing no spaces, surrounded by ' '
+IF an equations is not passed as an argument the default equation of (((x1+5.12)*(x2-7.68))/x3)
+will be used instead.
+
+to run part 2 type:
+./bin2/runme 
+
+Sample Ouput:
+PART 1:
+TheKyleBookAir:Assignment3 kyle$ ./bin1/runme '(x1*12.3)-(24.6/3)+1'
+
+
+Equation: (x1*12.3)-(24.6/3)+1
+
+1. Display
+2. Preorder
+3. Inorder
+4. Postorder
+5. Update
+6. Calculate
+7. Exit
+>1
+                 -                                                              
+       +---------+-------------------+                                          
+       *                             +                                          
+  +----+----+              +---------+----+                                     
+ x01      12.30            /            01.00                                   
+                      +----+----+                                               
+                    24.60     03.00                                             
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+x1 = 0.000000
+(Scroll Up)
+
+1. Display
+2. Preorder
+3. Inorder
+4. Postorder
+5. Update
+6. Calculate
+7. Exit
+>2
+
+LEAF: -
+LEAF: *
+LEAF: x1=0.00
+LEAF: 12.30
+LEAF: +
+LEAF: /
+LEAF: 24.60
+LEAF: 3.00
+LEAF: 1.00
+
+
+1. Display
+2. Preorder
+3. Inorder
+4. Postorder
+5. Update
+6. Calculate
+7. Exit
+>3
+
+LEAF: x1=0.00
+LEAF: *
+LEAF: 12.30
+LEAF: -
+LEAF: 24.60
+LEAF: /
+LEAF: 3.00
+LEAF: +
+LEAF: 1.00
+
+
+1. Display
+2. Preorder
+3. Inorder
+4. Postorder
+5. Update
+6. Calculate
+7. Exit
+>4
+
+LEAF: x1=0.00
+LEAF: 12.30
+LEAF: *
+LEAF: 24.60
+LEAF: 3.00
+LEAF: /
+LEAF: 1.00
+LEAF: +
+LEAF: -
+
+
+1. Display
+2. Preorder
+3. Inorder
+4. Postorder
+5. Update
+6. Calculate
+7. Exit
+>5
+
+Input format: variable_name, variable_data
+>x1, 1.5
+
+
+Searching....
+Variable successfully updated!
+
+
+1. Display
+2. Preorder
+3. Inorder
+4. Postorder
+5. Update
+6. Calculate
+7. Exit
+>6
+
+running calculations.........
+Result: 9.250000
+
+
+1. Display
+2. Preorder
+3. Inorder
+4. Postorder
+5. Update
+6. Calculate
+7. Exit
+>7
+
+
+PART 2:
+TheKyleBookAir:Assignment3 kyle$ ./bin2/runme
+
+ORIGINAL DATA:
+KEY: 054   Object: 25 12 17 82 52 53 05 03 68 64 
+KEY: 090   Object: 43 27 20 59 04 84 10 42 43 02 
+KEY: 137   Object: 81 14 42 21 09 69 05 30 20 91 
+KEY: 260   Object: 96 89 75 00 63 24 54 20 20 24 
+KEY: 185   Object: 41 62 82 46 69 42 74 68 79 28 
+KEY: 065   Object: 50 09 06 44 59 87 32 36 36 46 
+KEY: 208   Object: 83 82 43 11 21 04 08 97 93 14 
+KEY: 139   Object: 03 60 76 23 14 81 82 00 38 04 
+KEY: 114   Object: 09 83 22 90 74 56 64 75 67 55 
+KEY: 176   Object: 41 82 53 40 29 84 24 61 87 20 
+KEY: 186   Object: 99 37 50 93 57 06 29 91 92 39 
+KEY: 077   Object: 25 41 11 88 15 39 88 69 31 49 
+KEY: 137   Object: 03 37 97 53 36 54 69 68 38 43 
+KEY: 139   Object: 44 27 68 96 70 98 85 13 25 47 
+KEY: 178   Object: 51 90 37 86 42 44 48 64 41 01 
+KEY: 057   Object: 16 14 27 99 29 99 79 45 59 19 
+KEY: 203   Object: 88 56 59 88 39 30 44 59 49 72 
+KEY: 110   Object: 49 17 44 32 33 54 60 33 51 87 
+KEY: 080   Object: 12 00 68 68 49 68 74 32 09 30 
+KEY: 127   Object: 81 30 16 65 40 39 44 49 32 60 
+
+AFTER HEAP SORT:
+KEY: 054   Object: 25 12 17 82 52 53 05 03 68 64 
+KEY: 065   Object: 50 09 06 44 59 87 32 36 36 46 
+KEY: 057   Object: 16 14 27 99 29 99 79 45 59 19 
+KEY: 077   Object: 25 41 11 88 15 39 88 69 31 49 
+KEY: 080   Object: 12 00 68 68 49 68 74 32 09 30 
+KEY: 090   Object: 43 27 20 59 04 84 10 42 43 02 
+KEY: 110   Object: 49 17 44 32 33 54 60 33 51 87 
+KEY: 114   Object: 09 83 22 90 74 56 64 75 67 55 
+KEY: 127   Object: 81 30 16 65 40 39 44 49 32 60 
+KEY: 137   Object: 03 37 97 53 36 54 69 68 38 43 
+KEY: 137   Object: 81 14 42 21 09 69 05 30 20 91 
+KEY: 139   Object: 44 27 68 96 70 98 85 13 25 47 
+KEY: 139   Object: 03 60 76 23 14 81 82 00 38 04 
+KEY: 176   Object: 41 82 53 40 29 84 24 61 87 20 
+KEY: 178   Object: 51 90 37 86 42 44 48 64 41 01 
+KEY: 185   Object: 41 62 82 46 69 42 74 68 79 28 
+KEY: 186   Object: 99 37 50 93 57 06 29 91 92 39 
+KEY: 203   Object: 88 56 59 88 39 30 44 59 49 72 
+KEY: 208   Object: 83 82 43 11 21 04 08 97 93 14 
+KEY: 260   Object: 96 89 75 00 63 24 54 20 20 24 
+
+
+

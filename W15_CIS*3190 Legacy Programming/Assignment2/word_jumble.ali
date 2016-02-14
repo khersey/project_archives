@@ -1,0 +1,237 @@
+V "GNAT Lib v4.9"
+M P W=b
+P SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_DYNAMIC_CODE
+RV NO_IMPLICIT_LOOPS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_STREAMS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+RV SPARK_05
+
+U word_jumble%b		word_jumble.adb		8b0baeca NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.containers.doubly_linked_lists%s
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.adb		a-finali.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.iterator_interfaces%s
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.maps%s	a-strmap.adb		a-strmap.ali
+W ada.strings.maps.constants%s  a-stmaco.ads	a-stmaco.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.unchecked_deallocation%s
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.address_image%s  s-addima.adb		s-addima.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20140225151544 66457d31
+D a-contai.ads		20101025135029 61e5e089
+D a-cdlili.ads		20130411133353 c3008bbb
+D a-cdlili.adb		20130411133353 17cec70d
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-inteio.ads		20070406091342 f64b89a4
+D a-ioexce.ads		20140225151544 e4a01f64
+D a-iteint.ads		20110906092602 7c7305e9
+D a-stream.ads		20140122164720 1a984740
+D a-string.ads		20070406091342 90ac6797
+D a-strmap.ads		20090409150019 9cb836fb
+D a-stmaco.ads		20090409150019 cef4434b
+D a-strunb.ads		20120426100351 3f91d4c5
+D a-suteio.ads		20090409150019 26d8e9aa
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20140129155348 386df5d4
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-uncdea.ads		20070406091342 f15a5ed1
+D interfac.ads		20140225151838 69adb1b9
+D i-cstrea.ads		20130412125801 8128536b
+D system.ads		20140730121111 90249111
+D s-addima.ads		20090409150019 a1ec9d3a
+D s-atocou.ads		20131010110730 cd7c94ca
+D s-atocou.adb		20131010121735 62bad392
+D s-conca2.ads		20140225151544 02a0d7d0
+D s-crtl.ads		20140225151544 840e6817
+D s-exctab.ads		20140225151139 54135002
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-secsta.ads		20140225151139 86a2856d
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-stposu.ads		20121005142121 ffeba1c5
+D s-stratt.ads		20131014135145 aedef97e
+D s-string.ads		20140225151139 8fe54fb7
+D s-ststop.ads		20140225151139 e6693757
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D s-valint.ads		20090409150019 48a52a3f
+D s-wchcon.ads		20140225151139 1b7d22d2
+D word_jumble.adb	20150227020053 51902725
+X 1 ada.ads
+16K9*Ada 19e8 52|10r6 10r23 11r6 11r31 12r6 12r33 13r6 13r41 14r6 15r6 22r13
+. 42r37
+X 4 a-contai.ads
+16K13*Containers 24e19 52|15r10 22r17
+20I9*Count_Type<integer>
+X 5 a-cdlili.ads
+40+9 Element_Type 52|22r48
+45k24*Doubly_Linked_Lists 381e39 52|15w21 22r28
+49R9 List<8|48R9> 52|65r42[21] 72r41[21] 95r54[21] 177r49[21] 207r22[21]
+72V13 Length{4|20I9} 52|178s52[21] 241s31[21]
+74V13 Is_Empty{boolean} 52|74s19[21] 182s26[21] 237s19[21] 265s19[21] 269s30[21]
+141U14 Prepend 52|67s16[21]
+156U14 Delete_First 52|78s20[21]
+198V13 First_Element{16|79R9} 52|77s27[21]
+222V13 Contains{boolean} 52|121s31[21]
+X 9 a-inteio.ads
+18K13*Integer_Text_IO[20|45] 52|11w10 11r35
+X 11 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[5|67]>
+X 13 a-string.ads
+16K13*Strings 35e16 52|12r10 12r37 13r10 13r45 14r10 42r41
+X 14 a-strmap.ads
+38K21*Maps 412e21 52|14r18 42r49
+108A9*Character_Mapping(character)
+X 15 a-stmaco.ads
+38K26*Constants 916e31 52|14w23 42r54
+55a4*Lower_Case_Map{14|108A9} 52|42r64
+X 16 a-strunb.ads
+76K21*Unbounded 489e26 52|12w18 12r45 13r18 13r53
+79R9*Unbounded_String<8|48R9> 473e14 52|22r64 28r55 35r28 37r21 38r21 65r57
+. 72r57 95r74 131r41 134r16 135r17 177r75 179r16 208r15 211r16
+84V13*Length{natural} 52|100s16 144s23 147s36 150s39 153s44 159s32 162s20
+. 162s37 168s32
+94V13*To_Unbounded_String{79R9} 52|151s26
+100V13*To_String{string} 52|154s38 163s38
+115U14*Append 52|254s21
+131V14*"&"{79R9} 52|148s32
+139V13*Element{character} 52|105s25 106s42 113s25 114s42 145s18 254s38
+143U14*Replace_Element 52|106s17 107s17 114s17 115s17
+166V14*"="{boolean} 5|42i19 52|49s26
+316V13*Translate{79R9} 52|42s22
+373U14*Delete 52|159s17 168s17
+X 17 a-suteio.ads
+39K31*Text_IO 61e34 52|13w28 13r63
+47U14*Get_Line 52|47s13
+50U14*Get_Line 52|140s9 142s9
+53U14*Put 52|189s30 248s13 262s46 271s17
+X 19 a-textio.ads
+49K13*Text_IO 471e16 52|10w10 10r27
+52P9*File_Type 52|36r21
+53n23*In_File{53E9} 52|43r25
+92U14*Open 52|43s9
+98U14*Close 52|50s17 55s9
+166U14*New_Line 52|187s45 189s46 194s47 197s13 220s43 221s43 222s43 223s56
+. 224s56 225s43 238s58 248s23 262s9 262s60 266s58 268s30 271s27 273s13
+169U14*Skip_Line 52|192s20 196s24 228s22
+183V13*End_Of_File{boolean} 52|45s23
+242U14*Put 52|139s9 141s9 187s9 189s20 191s9 194s13 195s13 220s5 221s5 222s5
+. 223s5 224s5 225s5 227s5 238s13 247s13 262s18 266s13 268s13
+263U14*Put_Line 52|75s13
+X 20 a-tiinio.ads
+55U14*Get 52|192s9[9|18] 196s13[9|18] 228s5[9|18]
+65U14*Put 52|189s13[9|18]
+X 52 word_jumble.adb
+18U11*Word_Jumble 18b11 277l5 277t16
+21K13 linked[5|45] 65r35 67r9 72r34 74r12 77r20 78r13 95r47 121r24 177r42
+. 178r45 182r19 207r15 237r12 241r24 265r12 269r23
+27A10 int_array(integer)<integer> 84r44 131r73 209r15
+28A10 unb_str_array(16|79R9)<integer> 178r19
+35V14 is_word{boolean} 35b14 35>22 58l9 58t16 120s16
+35r22 str{16|79R9} 42r32
+36p9 word_file{19|52P9} 43m14 43r14 45r35 47r22 50m23 50r23 55m15 55r15
+37r9 word{16|79R9} 47m33 49r28
+38r9 lower_str{16|79R9} 42m9 49r16
+65U15 push 65b15 65=20 65>48 68l9 68t13 122s21
+65r20 stack{5|49R9[21]} 67m24
+65r48 str{16|79R9} 67r31
+72U15 pop 72b15 72=19 72<47 80l9 80t12 183s13 244s17 270s17
+72r19 stack{5|49R9[21]} 74r28 77r41 78m33
+72r47 str{16|79R9} 77m13
+84U15 reset_int_array 84b15 84=31 89l9 89t24 138s9
+84a31 arr{27A10} 87m13
+86i13 i{integer} 87r17
+95U15 generate_anagram 95b15 95=32 95=60 95>92 110s17 126l9 126t25 235s9
+. 263s9
+95r32 stack{5|49R9[21]} 110m34 121r40 122m26
+95r60 word{16|79R9} 100r23 105r33 106m33 106r50 107m33 110m41 113r33 114m33
+. 114r50 115m33 120r24 121r47 122r33
+95i92 pos{integer} 102r12 103r23 106r56 107r39 110r47 114r56 115r39
+96i9 len{integer} 100m9 102r18 103r30
+97e9 temp{character} 105m17 107r44 113m17 115r44
+103i17 i{integer} 105r39 106r39 113r39 114r39
+131U15 get_user_input 131b15 131<30 131<59 173l9 173t23 232s9
+131r30 word{16|79R9} 140m18
+131a59 letters{27A10} 138m25 156m21 165m21
+132i9 index{integer} 143m9 156r29 157m21 157r30 165r29 166m21 166r30
+133i9 num{integer} 154m17 155r20 156r39 163m17 164r20 165r39
+134r9 line{16|79R9} 142m18 144r30 145r26 162r27
+135r9 chunk{16|79R9} 147r43 148m17 148r26 150r46 151m17 153r51 154r48 159m24
+. 159r24 159r39 162r44 163r48 168m24 168r24 168r39
+136e9 c{character} 145m13 147r16 148r34 150r19 151r51 153r20 153r31
+144i13 i{integer} 145r31 162r16
+177U15 choose_word 177b15 177=27 177<55 202l9 202t20 242s17
+177r27 stack{5|49R9[21]} 178r59 182r35 183m17
+177r55 selected_word{16|79R9} 200m9
+178a9 choices{28A10} 185m13 188r18 189r34 193r28 200r26
+179r9 word{16|79R9} 183m24 185r31
+180i9 index{integer} 184m13 184r22 185r21 192m13 193r15 196m17 200r34
+188i13 i{integer} 189r17 189r42
+207r5 stack{5|49R9[21]} 235m26 235r26 237r28 241r38 242m29 242r29 244m21
+. 244r21 263m26 263r26 265r28 269r39 270m21 270r21
+208r5 word{16|79R9} 232m24 235m33 235r33 242m36 244m28 248r17 254r46 270m28
+. 271r21
+209a5 letters{27A10} 232m30 251r22 252r33
+210i5 letter_index{integer} 252m17 253r20 254r51
+211r5 sum_word{16|79R9} 254m28 254r28 262r50 263m33 263r33
+212i5 word_count{integer} 230r11 233m9 233r23
+213i5 word_total{integer} 228m9 230r24
+251i17 i{integer} 252r41
+

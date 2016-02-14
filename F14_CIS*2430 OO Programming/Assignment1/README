@@ -1,0 +1,107 @@
+*****************************************************************************************************
+Title:		Assignment 1
+Author:		Kyle Hersey
+Student #:	0851973
+Class:		CIS*2430
+
+
+*****************************************************************************************************
+Goals of this Assignment:
+The goal of this assignment is to create a Day Planner program implemented in Java to keep track
+of different activties.  All activities will be categorized as Home, School or Other.  This program
+will allow the user to add new activities to one of these categories, and also to search through 
+these categories to find existing activites.  Searches can be done using a combination of keywords
+found in the title, time range, and activity type. 
+
+
+*****************************************************************************************************
+Assumptions and Limitations:
+We are assuming the user will have no more than 64 events per category.  If the user tries to add 
+more than 64 events to a category they will be alerted that the category is full.  Time range
+search must use a range, the user cannot simply search for anything after a certain start time, or
+before a certain end time.  
+
+
+*****************************************************************************************************
+How to Build and Test:
+Open up the root directory of the source code as a Project in Netbeans.
+Click the "Run Project" button
+or
+Open a terminal and navigate to the folder where you extracted the .tar.gz
+into terminal type in command: ant
+after compilation navigate to /build/classes
+into terminal type in command: java DayPlanner
+
+At the main menu type in 'add'
+Add a new activity to a list of your choice.
+At the main menu again type in 'search' or 's'
+Search for your new activity using which ever fields you want to
+If you use search correctly it should find your activity
+
+
+*****************************************************************************************************
+Test Plan:
+Command loop conditions
+the user's input could be:
+-upper case
+-lower case
+-mixed case
+-first letter of word
+-the wrong word
+
+Add conditions:
+-the user is adding to an array that is empty
+-the user is adding to an array that is not empty and not full
+-the user is adding to an array that is full
+-the user provides a start date that is before the end date
+-the user provides a start date that is equal to the end date
+-the user provides a start date that is after the end date
+
+New Date conditions:
+-months must fall within range 1-12
+-days must fall within range 1-31
+-hours must fall within range 0-23
+-minutes must fall within range 0-59
+
+Search conditions:
+All searches will be a combination of:
+-the user is searching through one of the lists
+-the user is searching through all of the lists
+and
+-the user is searching with keywords
+-the user is searching without keywords
+and
+-the user is searching with a time range
+-the user is searching without a time range
+position within the list does not influence the way search results occur in this program.
+
+Search results:
+-the search returned one result
+-the search returned multiple results
+-the search returned no results
+
+Search keywords:
+-all the keywords exist in the title exactly
+-all the keywords exist in the title not exactly (eg keyword = 'fred' title = 'freddy')
+-all the keywords do not exist in the title
+-some keywords exist in the title
+-no keywords are specified
+
+Search dates:
+-the event ends inside the range
+-the event starts inside the range
+-the event starts and ends inside the range
+-date search is not used
+
+
+*****************************************************************************************************
+Possible Improvements:
+The ability to remove an activity from an array.
+Activites could be listed using a more flexible data structure than an array allowing for an unlimited
+amount of activies in a list.
+The ability to search for an other activity by location. 
+The ability to add repeating events.
+The ability to display one or more lists, and/or search results visually, maybe on a calendar.
+
+
+
