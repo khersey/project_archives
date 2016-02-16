@@ -1,0 +1,18 @@
+********** README **********
+student:    Kyle Hersey
+student#:   0851973
+course:     CIS*2750
+assignment: 1
+
+
+********** COMPILE AND RUN ***********
+just type: make (or make all)
+and add "libpm.a" as a parameter when compiling to use the library.
+
+"make clean" will remove libpm.a and *.o
+
+
+********** NOTES ***********
+All function comments are in the .c files.
+I only used one header file to make my life easier.
+ParameterManager.c contains all the required functions.

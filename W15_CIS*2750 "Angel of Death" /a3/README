@@ -1,0 +1,71 @@
+********** README **********
+student:    Kyle Hersey
+student#:   0851973
+course:     CIS*2750
+assignment: 3
+
+
+********** COMPILE AND RUN ***********
+compile commands:
+make
+make dialogc    (compile java files)
+make libpm      (compile c files)
+make yadc       (compile lex/yacc files)
+make clean      (removes: c_src/*.o, c_src/*.so, dialogc/*.class, yadc_src/y.*, yadc_src/lex.yy.c, yadc_src/yadc)
+
+run commands:
+java dialogc.Dialogc
+
+
+********** YADC **********
+run commands:
+./yadc [input file] 
+or
+./yadc [input file] [working directory]
+or
+./yadc < [input file]
+
+Both parameters are optional.  
+If one parameter is passed it will be interpretted as an input file.
+If a second parameter is also passed it will be interpretted as the working directory.
+You can use file redirection if you want, but the compiler will act as though your inputfile name was NameNotSpecied.config.
+In the case: ./yadc fileA.config < fileB.config
+    fileA.config would be used as the input file.
+
+For Example the Command:
+./yadc bigProject.config folder1/folder2/folder3
+
+Would create directory structure:
+.folder1/folder2/folder3/bigProject/
+
+Would create files:
+.folder1/folder2/folder3/bigProject/bigProject.java
+.folder1/folder2/folder3/bigProject/bigProjectFieldEdit.java
+.folder1/folder2/folder3/bigProject/IllegalFieldValueException.java
+
+
+********** NOTES ***********
+My makefile is designed to recognize if it is being run on OS X, Ubuntu or Other.
+If it gives you any crap, 
+Replace:
+---------------------------------------------------------------
+RELEASE = $(shell awk -F= '/^NAME/{print $2}' /etc/os-release)
+
+
+ifeq ($(PLATFORM) , Darwin)
+    JNI = JNI_mac
+else
+    ifeq ($(RELEASE), NAME="Ubuntu")
+        JNI = JNI_ubuntu
+    else
+        JNI = JNI_lab
+    endif
+endif
+---------------------------------------------------------------
+
+With:
+JNI = JNI_lab
+
+and hopefully that will fix it.
+
+

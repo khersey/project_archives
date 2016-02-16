@@ -1,0 +1,17 @@
+********** README **********
+student:    Kyle Hersey
+student#:   0851973
+course:     CIS*2750
+assignment: 4
+
+********** COMPILE AND RUN ***********
+all compilation is done by install_dialogc.sh
+
+run command:
+./dialogc.sh
+or
+java -jar bin/dialogc.jar
+
+NOTE: the program must be run from the install directory NOT from bin/
+
+
