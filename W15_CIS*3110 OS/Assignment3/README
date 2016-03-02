@@ -1,0 +1,33 @@
+********************* README *********************
+author:     Kyle Hersey
+student#:   0851973
+course:     CIS*3110
+assignment: 3
+**************************************************
+
+
+Compile and Run:
+navigate to the directory where this was unpacked in a terminal and type:
+make
+this will create two executables:
+dinner - dinning philosophers executable
+holes  - memory management simulation executable
+
+Submitted Files:
+philosophers.c & philosophers.h
+ - Dining philosophers code and header files
+fifoQueue.c & fifoQueue.h
+ - Everything necesary to implement a simple linked list based FIFO queue.
+holes.c, memUtils.c & holes.h
+ - Memory simulation code and header file.
+
+
+Report:
+Dining Philosophers - My dining philosophers program avoids deadlock by using a second semaphore which only allows totalPhilosphers - 1 to 
+pick up forks at a time. This means at least one philosopher will always have access to 2 forks.
+
+Memory Management Simulation - I used a character array to simulate memory.  Empty memory slots will have a value of ' ' and full memory 
+slots will contain the id of their process.  For example all memory slots containing a process B 55 would be equal to 'B'.  Otherwise my 
+solution is straightforward.
+
+NOTE: wrote and tested on OS X 10.10
